@@ -1,0 +1,198 @@
+{% extends "base.html" %}
+{% load static %}
+{% block content %}
+
+  <!-- Start Proerty header  -->
+
+  <section id="aa-property-header">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12">
+          <div class="aa-property-header-inner">
+            <h2>Properties Details</h2>
+            <ol class="breadcrumb">
+            <li><a href="{% url 'home' %}">HOME</a></li>
+            <li class="active">APARTMENT TITLE</li>
+          </ol>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section> 
+  <!-- End Proerty header  -->
+
+  <!-- Start Properties  -->
+  <section id="aa-properties">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-8">
+          <div class="aa-properties-content">            
+            <!-- Start properties content body -->
+            <div class="aa-properties-details">
+             <div class="aa-properties-details-img">
+               <img src="{% static 'img/slider/sl/1.jpg' %}" alt="img">
+               <img src="{% static 'img/slider/sl/2.jpg' %}" alt="img">
+               <img src="{% static 'img/slider/sl/3.jpg' %}" alt="img">
+             </div>
+             <div class="aa-properties-info">
+               <h2>"Luxury 3-Bedroom Apartment with Stunning City Views!"</h2>
+               <span class="aa-price">8500000 tk</span>
+              <p>Open-plan kitchen with premium fittings</p>
+              <p>Spacious balcony with panoramic views</p>
+              <p>Fully equipped gym and swimming pool access
+              </p>
+              <p>Secure parking and 24/7 security
+              </p>
+              <p>Smart home technology integration
+              </p>
+               <h4>Propery Features</h4>
+               <ul>
+                 <li>4 Bedroom</li>
+                 <li>3 Baths</li>
+                 <li>Kitchen</li>
+                 <li>Air Condition</li>
+                 <li>Belcony</li>
+                 <li>Gym</li>
+                 <li>Garden</li>
+                 <li>CCTV</li>
+                 <li>Children Play Ground</li>
+                 <li>Comunity Center</li>
+                 <li>Security System</li>
+               </ul>
+               <h4>Property Video</h4>
+               <iframe width="100%" height="480" src="https://www.youtube.com/embed/zOWuNnBF_ZE" frameborder="0" allowfullscreen></iframe>
+               <h4>Property Map</h4>
+                <iframe class="map011" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3651.9044069081863!2d90.39315431544077!3d23.8672527845884!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3755c7f0a7d7d1f3%3A0x1c4f2d4f6c7b1a6e!2sUttora%2C%20Dhaka%2C%20Bangladesh!5e0!3m2!1sen!2sbd!4v1633023200000"
+               width="100%" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+             </div>
+             <!-- Properties social share -->
+             <div class="aa-properties-social">
+               <ul>
+                 <li>Share</li>
+                 <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                 <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                 <li><a href="#"><i class="fa fa-google-plus"></i></a></li>
+                 <li><a href="#"><i class="fa fa-pinterest"></i></a></li>
+               </ul>
+             </div>
+             <!-- Nearby properties -->
+             <div class="aa-nearby-properties">
+               <div class="aa-title">
+                 <h2>Nearby Properties</h2>
+                 <span></span>
+               </div>
+               <div class="aa-nearby-properties-area">
+                 <div class="row">
+                   <div class="col-md-6">
+                     <article class="aa-properties-item">
+                        <a class="aa-properties-item-img" href="#">
+                          <img alt="img" src="{% static 'img/item/it/1.jpg' %}">
+                        </a>
+                        <div class="aa-tag for-sale">
+                          For Sale
+                        </div>
+                        <div class="aa-properties-item-content">
+                          <div class="aa-properties-info">
+                            <span>5 Rooms</span>
+                            <span>2 Beds</span>
+                            <span>3 Baths</span>
+                            <span>1100 SQ FT</span>
+                          </div>
+                          <div class="aa-properties-about">
+                            <h3><a href="#">Appartment SopnoNil</a></h3>
+                            <p>Beside of lack</p>
+                          </div>
+                          <div class="aa-properties-detial">
+                            <span class="aa-price">
+                              3350000 tk
+                            </span>
+                            <a class="aa-secondary-btn" href="#">View Details</a>
+                          </div>
+                        </div>
+                      </article>
+                   </div>
+                   <div class="col-md-6">
+                     <article class="aa-properties-item">
+                      <a class="aa-properties-item-img" href="#">
+                        <img alt="img" src="{% static 'img/item/it/2.jpg' %}">
+                      </a>
+                      <div class="aa-tag for-sale">
+                        For Sale
+                      </div>
+                      <div class="aa-properties-item-content">
+                        <div class="aa-properties-info">
+                          <span>5 Rooms</span>
+                          <span>2 Beds</span>
+                          <span>3 Baths</span>
+                          <span>1100 SQ FT</span>
+                        </div>
+                        <div class="aa-properties-about">
+                          <h3><a href="#">Appartment MuktoHawa</a></h3>
+                          <p>beside of plackround</p>
+                        </div>
+                        <div class="aa-properties-detial">
+                          <span class="aa-price">
+                             1250000 tk
+                          </span>
+                          <a class="aa-secondary-btn" href="#">View Details</a>
+                        </div>
+                      </div>
+                    </article>
+                   </div>
+                 </div>
+               </div>
+
+             </div>
+
+            </div>           
+          </div>
+        </div>
+
+        <div class="col-md-4">
+          <aside class="aa-properties-sidebar">
+            <div class="aa-properties-single-sidebar">
+              <h3>Populer Properties</h3>
+              <div class="media">
+                <div class="media-left">
+                  <a href="#">
+                    <img class="media-object" src="{% static 'img/item/it/1.jpg' %}" alt="img">
+                  </a>
+                </div>
+                <div class="media-body">
+                  <h4 class="media-heading"><a href="#">Habia Apartment</a></h4>
+                  <p>A nice apartment</p>
+                  <span>650000 tk</span>
+                </div>
+              </div>
+              <div class="media">
+                <div class="media-left">
+                  <a href="#">
+                    <img class="media-object" src="{% static 'img/item/it/3.jpg' %}" alt="img">
+                  </a>
+                </div>
+                <div class="media-body">
+                  <h4 class="media-heading"><a href="#">Amder Ghor</a></h4>
+                  <p>Beside of playgound</p>
+                  <span>1165000 tk</span>
+                </div>              
+              </div>
+              <div class="media">
+                <div class="media-left">
+                  <a href="#">
+                    <img class="media-object" src="{% static 'img/item/it/4.jpg' %}" alt="img">
+                  </a>
+                </div>
+                <div class="media-body">
+                  <h4 class="media-heading"><a href="#">Nil Tara</a></h4>
+                  <p>Beside of shopping mall.</p>
+                  <span>665000 tk</span>
+            </div>
+              </div>
+            </div>
+
+          </aside>
+        </div>
+      </div>
+    </div>
+  </section>
+{% endblock %}
