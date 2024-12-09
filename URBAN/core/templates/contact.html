@@ -1,0 +1,78 @@
+{% extends "base.html" %}
+{% load static %}
+{% block content %}
+
+  <!-- Start Property header -->
+  <section id="aa-property-header">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12">
+          <div class="aa-property-header-inner">
+            <h2>Contact</h2>
+            <ol class="breadcrumb">
+              <li><a href="{% url 'home' %}">HOME</a></li>
+              <li class="active">Contact</li>
+            </ol>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section> 
+  <!-- End Property header -->
+
+  <!-- Start Contact section -->
+  <section id="aa-contact">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12">
+          <div class="aa-contact-area">
+            <div class="aa-contact-top">
+               <div class="aa-contact-top-left">
+                <iframe width="100%" height="450" frameborder="0" allowfullscreen="" style="border:0" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3651.9044069081863!2d90.39315431544077!3d23.8672527845884!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3755c7f0a7d7d1f3%3A0x1c4f2d4f6c7b1a6e!2sUttora%2C%20Dhaka%2C%20Bangladesh!5e0!3m2!1sen!2sbd!4v1633023200000"></iframe>
+              </div>
+              <div class="aa-contact-top-right">
+               <h2>Contact</h2>
+                <p>Here is ous contact info.</p>
+                <ul class="contact-info-list">
+                  <li> <i class="fa fa-phone"></i> 01743516118</li>
+                  <li> <i class="fa fa-envelope-o"></i> mdd7825602@gmail.com</li>
+                  <li> <i class="fa fa-map-marker"></i> 250/1 malitola road,Dhaka</li>
+                </ul>
+              </div>
+            </div>
+            <div class="aa-contact-bottom">
+              <div class="aa-title">
+                <h2>Send Your Message</h2>
+                <span></span>
+                <p>Your email address will not be published. Required fields are marked <strong class="required">*</strong></p>
+              </div>
+              <div class="aa-contact-form">
+                <form class="contactform">
+                  <p class="comment-form-author">
+                    <label for="author">Name <span class="required">*</span></label>
+                    <input type="text" name="author" value="" size="30" required="required">
+                  </p>
+                  <p class="comment-form-email">
+                    <label for="email">Email <span class="required">*</span></label>
+                    <input type="email" name="email" value="" aria-required="true" required="required">
+                  </p>
+                  <p class="comment-form-url">
+                    <label for="subject">Subject</label>
+                    <input type="text" name="subject">  
+                  </p>
+                  <p class="comment-form-comment">
+                    <label for="comment">Message</label>
+                    <textarea name="comment" cols="45" rows="8" aria-required="true" required="required"></textarea>
+                  </p>                
+                  <p class="form-submit">
+                    <input type="submit" name="submit" class="aa-browse-btn" value="Send Message">
+                  </p>        
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+{% endblock %}
